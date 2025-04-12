@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrithul.E</title>
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/125123198?v=4">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      :root {
+        --primary: #488B49;
+        --secondary: #6EB257;
+        --accent: #C5E063;
+        --background: #F9FFF7;
+        --text: #1E1E1E;
+        --nav-bg: #507255;
+      }
+
+      html{
+        scroll-behavior: smooth; 
+        font-size: 17px; 
+        scroll-padding-top: 65px;
+        font-family: roboto;
+      }
+
+      .card-img {
+        height: 15em;
+      }
+
+      #footer-content a{
+        text-decoration: none;
+        color: white;
+        margin-left: 1px;
+        margin-right: 1px;
+      }
+
+      #footer-content a svg {
+        width: 21px;
+        height: 21px;
+        margin-left: 2px;
+        margin-left: 2px;
+        margin-bottom: 3px;
+      }
+
+      header {
+        background-color: var(--nav-bg)
+      }
+
+      footer {
+        background-color: var(--nav-bg)
+      }
+
+      #send-msg-btn {
+        background-color: var(--secondary);
+        color: white;
+      }
+
+      #service-section {
+        background: var(--background);
+      }
+
+      .form-check-input:checked {
+        background-color: var(--secondary) !important;
+        border-color:  var(--secondary) !important;
+      }
+      
+      h1 {
+        color: rgb(57, 57, 57);
+        font-weight: bolder;
+      }
+      
+    </style>
+    <script src="https://kit.fontawesome.com/4323aee170.js" crossorigin="anonymous"></script>
+</head>
+<body style="padding-top: 6em;">
+    <header class="fixed-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-8 text-white p-3 ps-5">
+              <h2>Mrithul.E</h2>
+          </div>
+          <div class="col-md-6 col-4 my-auto">
+              <nav class="navbar navbar-expand-lg navbar-light ">
+                  <div class="container-fluid">                      
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                          <a class="nav-link active text-white" aria-current="page" href="#home-section" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white"  href="#service-section">Services</a>
+                        </li>  
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#experience-section">Experience</a>
+                        </li>  
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#contact-section">Contanct</a>
+                        </li>                      
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+          </div>
+      </div>
+      </div>
+    </header>
+
+
+    <section id="home-section" style="scroll-margin-top: 6em;">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-md-6 col-4">
+            <img src="https://avatars.githubusercontent.com/u/125123198?v=4" class="img-fluid rounded-circle float-start" alt="">
+          </div>
+          <div class="col-md-6 col-8">
+            <h4>programmer <br> 
+                kannur, kerala, India</h4>
+            <blockquote class="blockquote pb-2 pt-5">
+              <svg color="grey" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+              </svg>
+              <p>“If you really want to do something, you'll find a way. If you don't, you'll find an excuse.”</p>
+              <figcaption class="blockquote-footer mb-0 font-italic">
+                Jim Rohn
+              </figcaption>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class=" p-5" id="service-section">
+      <div class="container">
+        <h1 class="text-center">Services</h1>
+        <div class="row">
+
+          <div class="col-md-4 d-flex justify-content-center mt-3">
+            <div class="card shadow" style="width: 18rem;">
+              <img class="card-img-top card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-CNoqro6xkF4yhyjRX0XtgpI7AkSXuaeQfA&s" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Programming</h5>
+                <p class="card-text">Unlock the power of code! Learn to build websites, apps, and automate tasks with languages like Python, JavaScript, and more. Start your coding journey today!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center mt-3">
+            <div class="card shadow" style="width: 18rem;">
+              <img class="card-img-top card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN10TAIbHL0D1fZlbicQZu7YdwEddoVT7HQQ&s" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Editing</h5>
+                <p class="card-text">Bring your content to life! Master the art of photo, video, and text editing using powerful tools and creative techniques. Perfect your projects with professional polish!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center mt-3">
+            <div class="card shadow" style="width: 18rem;">
+              <img class="card-img-top card-img" src="https://img.freepik.com/free-vector/open-source-concept-illustration_114360-3583.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Web Design</h5>
+                <p class="card-text">Design sleek, responsive websites that look great on any screen. Learn UI/UX principles and modern tools to stand out online.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+
+          <div class="col-md-4 d-flex justify-content-center mt-3">
+            <div class="card shadow" style="width: 18rem;">
+              <img class="card-img-top card-img" src="https://hasdata.com/_astro/pros-cons1.G2Wgt9QB_kPE1F.webp" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Web Scraping</h5>
+                <p class="card-text">Extract hidden gems from the web. Learn how to gather data from websites using tools like BeautifulSoup and Selenium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center mt-3">
+            <div class="card shadow" style="width: 18rem;">
+              <img class="card-img-top card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-F_78QQuobkOb65W8HDNd6UTmFtBw9XqW4Q&s" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Automation</h5>
+                <p class="card-text">Let your code work for you. Automate boring tasks, simplify workflows, and boost productivity with Python scripts and bots.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center mt-3">
+            <div class="card shadow" style="width: 18rem;">
+              <img class="card-img-top card-img" src="https://media.istockphoto.com/id/2093365130/vector/reskilling-vector-illustration.jpg?s=612x612&w=0&k=20&c=sYTyg4RngtwvXFrXTNl7jAXNmlBEnFs1_40_IYpjsJc=" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Tech Projects</h5>
+                <p class="card-text">Explore cool coding, design, and AI experiments. Learn by building and having fun with tech!</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white pt-5" id="experience-section">
+      <div class="container">
+        <h1 class="text-center">Experience</h1>
+
+        <div class="row">
+
+          <div class="col-md-4 d-flex justify-content-center mt-3">
+            <div class="card shadow" style="width: 18rem;">
+              <img class="card-img-top card-img" src="https://seeklogo.com/images/P/python-logo-AE8E0705F6-seeklogo.com.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Python</h5>
+                <p class="card-text">Experienced in using Python for automation, web scraping, backend development, and AI/ML experiments.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4 d-flex justify-content-center mt-3">
+            <div class="card shadow" style="width: 18rem;">
+              <img class="card-img-top card-img" src="https://velog.velcdn.com/images/lhw9054/post/ee4e613f-a708-4e0b-a5b7-3b4fa2063b42/image.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">HTML, CSS & JavaScript</h5>
+                <p class="card-text">Built dynamic and responsive websites. Used HTML for structure, CSS for styling, and JS for interactivity.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4 d-flex justify-content-center mt-3">
+            <div class="card shadow" style="width: 18rem;">
+              <img class="card-img-top card-img" src="https://img.freepik.com/free-vector/printed-circuit-board-concept-illustration_114360-5139.jpg?semt=ais_hybrid&w=740" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Arduino</h5>
+                <p class="card-text">Worked with sensors and hardware components. Programmed Arduino for automation, IoT, and real-time data logging.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4 d-flex justify-content-center mt-3">
+            <div class="card shadow" style="width: 18rem;">
+              <img class="card-img-top card-img" src="https://www.encora.com/hubfs/Picture1-Apr-13-2023-08-44-21-6499-PM.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Web Scraping</h5>
+                <p class="card-text">Used Python libraries like BeautifulSoup and Selenium to collect and process data from websites.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4 d-flex justify-content-center mt-3">
+            <div class="card shadow" style="width: 18rem;">
+              <img class="card-img-top card-img" src="https://img.freepik.com/free-vector/data-extraction-concept-illustration_114360-4906.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">AI Tools</h5>
+                <p class="card-text">Integrated tools like Google Generative AI for tasks like OCR, image recognition, and handwriting generation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center mt-3">
+            <div class="card shadow" style="width: 18rem;">
+              <img class="card-img-top card-img" src="https://i.postimg.cc/yNp2Mx01/Chat-GPT-Image-Apr-7-2025-05-51-59-PM.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">AI Medicine Info App</h5>
+                <p class="card-text">Developed a smart app to search and display medicine usage. Combined Google scraping, Tata 1mg parsing, and AI-powered OCR for a seamless experience.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="p-3" id="contact-section">
+      <div class="container col-md-6">
+        <h1 class="text-center">Contact</h1>
+        <div class="row">
+          <form id="contact-form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPlace">Place</label>
+                <input type="text" class="form-control" id="inputPlace" placeholder="Place" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+            </div>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPhone">Phone number</label>
+                <input type="tel" class="form-control" id="inputPhone" placeholder="Phone number" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputMsg">message</label>
+              <textarea type="text" class="form-control" id="inputMsg" placeholder="message" required></textarea>
+            </div>
+        
+            <div class="form-group">
+              <div class="form-check mt-2 mb-2">
+                <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                <label class="form-check-label" for="gridCheck">
+                  confirm message
+                </label>
+              </div>
+            </div>
+            
+            <div class="row justify-content-center">
+              <div class="col-md-4 text-center">
+                <button type="submit" class="btn w-100" id="send-msg-btn">Send</button>
+              </div>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer style="padding-top: 6px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center text-white" id="footer-content">
+            <a href="https://github.com/Mrithul-E" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg>
+            </a>
+
+            <a href="https://www.instagram.com/mrithull_" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+            </a>
+            
+            <a href="mailto:mrithul100@gmail.com" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+              </svg>
+            </a>
+            
+            <a href="https://stackoverflow.com/users/19938225/mrithul-e" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stack-overflow" viewBox="0 0 16 16">
+                <path d="M12.412 14.572V10.29h1.428V16H1v-5.71h1.428v4.282z"/>
+                <path d="M3.857 13.145h7.137v-1.428H3.857zM10.254 0 9.108.852l4.26 5.727 1.146-.852zm-3.54 3.377 5.484 4.567.913-1.097L7.627 2.28l-.914 1.097zM4.922 6.55l6.47 3.013.603-1.294-6.47-3.013zm-.925 3.344 6.985 1.469.294-1.398-6.985-1.468z"/>
+              </svg>
+            </a>
+            
+            <a href="https://www.threads.net/@mrithull_" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-threads" viewBox="0 0 16 16">
+                <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161"/>
+              </svg>
+            </a>
+            
+            <p><small>© 2025 Copyright: Mrithul.E</small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4323aee170.js" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#contact-form").submit(function(){
+          var name_text = $("#inputName").val()
+          var place_text = $("#inputPlace").val()
+          var address_text = $("#inputAddress").val()
+          var email_text = $("#inputEmail").val()
+          var Phone_text = $("#inputPhone").val()
+          var Msg_text = $("#inputMsg").val()
+
+          var mail_content = `
+          Name   : ${name_text}%0D%0A
+          Place  : ${place_text}%0D%0A
+          Address: ${address_text}%0D%0A
+          Email  : ${email_text}%0D%0A
+          Phone  : ${Phone_text}%0D%0A%0D%0A
+          Dear Mrithul,%0D%0A
+              ${Msg_text}`
+
+          window.location.href = (`mailto:mrithul100@gmail.com?subject=FROMMYWEB-${name_text}&body=${mail_content}`);
+
+        })
+
+        $("#navbarSupportedContent ul").click(function () {
+          $(".navbar-collapse").collapse("hide");
+        });
+      }
+      )
+    </script>
+</body>
+</html>
