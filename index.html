@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="LFHgeGd9wVBOyZfpAoCZhinQE0aVoe3q1I7bB6-Dfjk" />
     <title>Mrithul.E</title>
     <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/125123198?v=4">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -68,6 +69,10 @@
         color: rgb(57, 57, 57);
         font-weight: bolder;
       }
+
+      #nav_bar_ul li{
+        padding-left: 1em;
+      }
       
     </style>
     <script src="https://kit.fontawesome.com/4323aee170.js" crossorigin="anonymous"></script>
@@ -77,33 +82,36 @@
     <header class="fixed-top">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 col-8 text-white p-3 ps-5">
+          <div class="col-md-3 col-3 text-white p-3 ps-5">
               <h2>Mrithul.E</h2>
           </div>
-          <div class="col-md-6 col-4 my-auto">
+          <div class="d-md-none col-9 my-auto">
               <nav class="navbar navbar-expand-lg navbar-light ">
                   <div class="container-fluid">                      
                     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                          <a class="nav-link active text-white" aria-current="page" href="#home-section" >Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-white"  href="#service-section">Services</a>
-                        </li>  
-                        <li class="nav-item">
-                          <a class="nav-link text-white" href="#experience-section">Experience</a>
-                        </li>  
-                        <li class="nav-item">
-                          <a class="nav-link text-white" href="#contact-section">Contanct</a>
-                        </li>                      
-                      </ul>
-                    </div>
+                    
                   </div>
                 </nav>
+          </div>
+          <div class="col-md-5 d-flex align-items-center">
+            <div class="col-12 collapse show" id="navbarSupportedContent">
+              <ul class="navbar-nav flex-row" id="nav_bar_ul">
+                <li class="nav-item flex-fill flex-md-grow-1">
+                  <a class="nav-link active text-white" aria-current="page" href="#home-section" >Home</a>
+                </li>
+                <li class="nav-item flex-fill flex-md-grow-1">
+                  <a class="nav-link text-white"  href="#service-section">Services</a>
+                </li>  
+                <li class="nav-item flex-fill flex-md-grow-1">
+                  <a class="nav-link text-white" href="#experience-section">Experience</a>
+                </li>  
+                <li class="nav-item flex-fill flex-md-grow-1">
+                  <a class="nav-link text-white" href="#contact-section">Contanct</a>
+                </li>                      
+              </ul>
+            </div>
           </div>
       </div>
       </div>
