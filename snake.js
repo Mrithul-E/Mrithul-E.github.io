@@ -11,6 +11,7 @@ let nextDirection = { x: 1, y: 0 };
 let food = { x: 0, y: 0 };
 let restrictedZones = [];
 let foodInaccessibleTime = 0;
+let timeSinceLastFood = 60000;
 
 let lastTime = 0;
 let accumulatedTime = 0;
@@ -202,22 +203,31 @@ function updateGame() {
     updateRestrictedZones();
     
     if (isMobile) {
-        const nextStep = getPathToFood();
+        let nextStep = null;
+        if (timeSinceLastFood >= 60000) {
+            nextStep = getPathToFood();
+        } else {
+            timeSinceLastFood += TICK_RATE;
+        }
+
         if (nextStep) {
             nextDirection = nextStep;
             foodInaccessibleTime = 0;
         } else {
-            foodInaccessibleTime += TICK_RATE;
-            if (foodInaccessibleTime >= 60000) {
-                spawnFood();
-                foodInaccessibleTime = 0;
+            if (timeSinceLastFood >= 60000) {
+                foodInaccessibleTime += TICK_RATE;
+                if (foodInaccessibleTime >= 60000) {
+                    spawnFood();
+                    foodInaccessibleTime = 0;
+                }
             }
             
             const safeDirs = getSafeDirections(snake[0].x, snake[0].y);
             if (safeDirs.length > 0) {
                 const currentSafe = safeDirs.find(d => d.x === direction.x && d.y === direction.y);
-                if (currentSafe) {
-                    nextDirection = direction;
+                // 10% chance to naturally change direction when wandering
+                if (currentSafe && Math.random() > 0.1) {
+                    nextDirection = currentSafe;
                 } else {
                     nextDirection = safeDirs[Math.floor(Math.random() * safeDirs.length)];
                 }
@@ -258,6 +268,7 @@ function updateGame() {
     
     if (nx === food.x && ny === food.y) {
         spawnFood();
+        timeSinceLastFood = 0;
     } else {
         snake.pop();
     }
