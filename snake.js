@@ -337,6 +337,12 @@ function drawGame() {
 }
 
 function loop(timestamp) {
+    if (document.visibilityState !== 'visible') {
+        lastTime = timestamp;
+        requestAnimationFrame(loop);
+        return;
+    }
+
     if (!lastTime) lastTime = timestamp;
     const dt = timestamp - lastTime;
     lastTime = timestamp;
