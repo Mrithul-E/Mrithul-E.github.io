@@ -511,13 +511,17 @@
     OneSignalDeferred.push(async function (OneSignal) {
       await OneSignal.init({
         appId: "c7f9ae37-a410-4f2a-9cdf-ac359ce95d3a",
+        autoPrompt: false,
         notifyButton: {
-          enable: false, // We use our own custom prompt
+          enable: false,
         },
         promptOptions: {
-          autoPrompt: false, // Disable all built-in prompts
+          autoPrompt: false,
+          slidedown: {
+            prompts: []
+          }
         },
-        allowLocalhostAsSecureOrigin: true, // For local testing
+        allowLocalhostAsSecureOrigin: true,
       });
     });
 
