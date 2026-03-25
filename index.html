@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="LFHgeGd9wVBOyZfpAoCZhinQE0aVoe3q1I7bB6-Dfjk" />
   <title>Mrithul E | Full-Stack Developer & Python Automation Expert in Kerala</title>
-  <meta name="description" content="Portfolio of Mrithul E, a developer from Kerala, India specializing in Python automation, web scraping, and AI-powered web solutions. Check out projects like Bhasha-Buddy and FlowchartJS.">
+  <meta name="description"
+    content="Portfolio of Mrithul E, a developer from Kerala, India specializing in Python automation, web scraping, and AI-powered web solutions. Check out projects like Bhasha-Buddy and FlowchartJS.">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
@@ -25,6 +26,9 @@
 
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/4323aee170.js" crossorigin="anonymous"></script>
+
+  <!-- OneSignal Web Push SDK -->
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
 
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
@@ -55,7 +59,8 @@
   <div class="bg-blob bg-blob-3"></div>
 
   <!-- Background Snake Game Canvas -->
-  <canvas id="bg-snake" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; pointer-events: none; opacity: 0.6;"></canvas>
+  <canvas id="bg-snake"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; pointer-events: none; opacity: 0.6;"></canvas>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
@@ -90,295 +95,321 @@
   <!-- Main Content Landmark -->
   <main>
 
-  <!-- Hero Section -->
-  <section id="home-section" class="d-flex align-items-center min-vh-100">
-    <div class="container">
-      <div class="row align-items-center flex-column-reverse flex-lg-row">
-        <div class="col-lg-6 mt-5 mt-lg-0 text-center text-lg-start z-index-1">
-          <div class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill glass-panel mb-4 shadow-sm">
-            <span class="fs-5">👋</span>
-            <span class="text-accent fw-bold text-uppercase tracking-wide" style="letter-spacing: 1px; font-size: 0.85rem;">Welcome to my universe</span>
-          </div>
-          
-          <h1 class="display-3 fw-bold mb-4 lh-sm">
-            Mrithul E: <br />
-            <span class="text-gradient">Full-Stack Developer</span> <br />
-            <span class="fs-2 text-white opacity-75 fw-medium">& AI Enthusiast</span>
-          </h1>
-          
-          <p class="fs-5 text-muted mb-5 lh-base" style="max-width: 500px; margin: 0 auto 0 0;">
-            Based in <span class="text-white fw-semibold">Kerala, India</span>. I design and build modern web applications and Python automation systems, with a focus on speed, accessibility, and performance.
-          </p>
-
-          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-5">
-            <a href="#projects-section" class="btn btn-primary btn-lg shadow-lg">Explore Projects</a>
-            <a href="#contact-section" class="btn btn-outline-light btn-lg glass-panel text-white border-0 hover-scale">Get in Touch</a>
-          </div>
-
-          <div class="glass-panel p-4 position-relative overflow-hidden" style="max-width: 500px; margin: 0 auto 0 0;">
-            <div class="position-absolute opacity-25" style="top: -20px; right: 0; font-size: 6rem; color: var(--accent-color);">
-              <i class="fas fa-quote-right"></i>
+    <!-- Hero Section -->
+    <section id="home-section" class="d-flex align-items-center min-vh-100">
+      <div class="container">
+        <div class="row align-items-center flex-column-reverse flex-lg-row">
+          <div class="col-lg-6 mt-5 mt-lg-0 text-center text-lg-start z-index-1">
+            <div class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill glass-panel mb-4 shadow-sm">
+              <span class="fs-5">👋</span>
+              <span class="text-accent fw-bold text-uppercase tracking-wide"
+                style="letter-spacing: 1px; font-size: 0.85rem;">Welcome to my universe</span>
             </div>
-            <figure class="mb-0 position-relative z-index-1">
-              <blockquote class="blockquote">
-                <p class="mb-3 fs-6 fst-italic text-light">"Don’t take rest after your first victory because if you fail in second, more lips
-                  are waiting to say that your first victory was just luck."</p>
-              </blockquote>
-              <figcaption class="blockquote-footer mb-0 text-accent">
-                Dr. A.P.J. Abdul Kalam
-              </figcaption>
-            </figure>
-          </div>
-        </div>
 
-        <div class="col-lg-6 text-center">
-          <div class="hero-img-wrapper float-anim">
-            <img src="https://avatars.githubusercontent.com/u/125123198?v=4"
-              class="hero-img"
-              alt="Mrithul E: Full-Stack Developer & AI Automation Expert based in Kerala, India" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <h1 class="display-3 fw-bold mb-4 lh-sm">
+              Mrithul E: <br />
+              <span class="text-gradient">Full-Stack Developer</span> <br />
+              <span class="fs-2 text-white opacity-75 fw-medium">& AI Enthusiast</span>
+            </h1>
 
-  <!-- Projects Section -->
-  <section id="projects-section">
-    <div class="container">
-      <h2 class="text-center mb-4 mb-md-5"><span class="text-gradient">Featured Projects</span></h2>
-      <div class="row g-4 justify-content-center">
-        <!-- Project 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <img src="https://medicine-use-finder.vercel.app/static/preview.png" class="card-img-top"
-              alt="Medicine Use Finder - Web app for medicine information by Mrithul E" loading="lazy">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Medicine Use Finder</h5>
-              <p class="card-text flex-grow-1">Get simple medicine usage info from trusted sources like Tata 1mg &
-                Netmeds. Built in India by Mrithul.</p>
-              <a href="https://medicine-use-finder.vercel.app/" target="_blank" class="btn btn-primary mt-3 w-100" aria-label="View Medicine Use Finder Project">View Project</a>
+            <p class="fs-5 text-muted mb-5 lh-base" style="max-width: 500px; margin: 0 auto 0 0;">
+              Based in <span class="text-white fw-semibold">Kerala, India</span>. I design and build modern web
+              applications and Python automation systems, with a focus on speed, accessibility, and performance.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-5">
+              <a href="#projects-section" class="btn btn-primary btn-lg shadow-lg">Explore Projects</a>
+              <a href="#contact-section"
+                class="btn btn-outline-light btn-lg glass-panel text-white border-0 hover-scale">Get in Touch</a>
+            </div>
+
+            <div class="glass-panel p-4 position-relative overflow-hidden"
+              style="max-width: 500px; margin: 0 auto 0 0;">
+              <div class="position-absolute opacity-25"
+                style="top: -20px; right: 0; font-size: 6rem; color: var(--accent-color);">
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <figure class="mb-0 position-relative z-index-1">
+                <blockquote class="blockquote">
+                  <p class="mb-3 fs-6 fst-italic text-light">"Don’t take rest after your first victory because if you
+                    fail in second, more lips
+                    are waiting to say that your first victory was just luck."</p>
+                </blockquote>
+                <figcaption class="blockquote-footer mb-0 text-accent">
+                  Dr. A.P.J. Abdul Kalam
+                </figcaption>
+              </figure>
             </div>
           </div>
-        </div>
 
-        <!-- Project 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <img src="flowchartjs.png" class="card-img-top" alt="FlowchartJS - Lightweight interactive flowchart library by Mrithul E" loading="lazy">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">FlowchartJS <span class="badge-ai ms-2">Made with AI</span></h5>
-              <p class="card-text flex-grow-1">A lightweight, themeable, and interactive flowchart library for the
-                modern web. Built with vanilla JS and CSS.</p>
-              <a href="https://mrithul-e.github.io/FlowchartJS/" target="_blank" class="btn btn-primary mt-3 w-100" aria-label="View FlowchartJS Project">View Project</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <img src="edushort.png" class="card-img-top" alt="Edushort - SCERT Kerala educational platform by Mrithul E" loading="lazy">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Edushort <span class="badge-soon ms-2">Coming Soon</span></h5>
-              <p class="card-text flex-grow-1">An educational website providing full SCERT Kerala Syllabus Alignment, featuring advanced SSLC Educational Tools, and offering structured learning resources for students and teachers across all grades.</p>
-              <button class="btn btn-primary mt-3 w-100" disabled aria-label="Edushort Project Coming Soon">View Project</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <img src="bhasha-buddy.png" class="card-img-top" alt="Bhasha-Buddy - AI-powered multilingual reader for translation and pronunciation" loading="lazy">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Bhasha-Buddy <span class="badge-ai ms-2">Made with AI</span></h5>
-              <p class="card-text flex-grow-1">A premium, AI-powered multilingual reader for seamless translation and
-                pronunciation. Features glassmorphic UI, TTS, and offline PWA support.</p>
-              <a href="https://mrithul-e.github.io/BhashaBuddy/" target="_blank" class="btn btn-primary mt-3 w-100" aria-label="View Bhasha-Buddy Project">View Project</a>
+          <div class="col-lg-6 text-center">
+            <div class="hero-img-wrapper float-anim">
+              <img src="https://avatars.githubusercontent.com/u/125123198?v=4" class="hero-img"
+                alt="Mrithul E: Full-Stack Developer & AI Automation Expert based in Kerala, India" loading="lazy">
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services Section (Converted from Carousel to Grid) -->
-  <section id="services-section" class="bg-surface-custom">
-    <div class="container">
-      <h2 class="text-center mb-4 mb-md-5"><span class="text-gradient">What I Do</span></h2>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body text-center p-4">
-              <div class="mb-3 display-5 text-accent"><i class="fas fa-code"></i></div>
-              <h5 class="card-title">Full-Stack Web Development</h5>
-              <p class="card-text small">Unlock the power of code! Build scalable websites and applications using modern JavaScript and Python frameworks.</p>
+    <!-- Projects Section -->
+    <section id="projects-section">
+      <div class="container">
+        <h2 class="text-center mb-4 mb-md-5"><span class="text-gradient">Featured Projects</span></h2>
+        <div class="row g-4 justify-content-center">
+          <!-- Project 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="https://medicine-use-finder.vercel.app/static/preview.png" class="card-img-top"
+                alt="Medicine Use Finder - Web app for medicine information by Mrithul E" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Medicine Use Finder</h5>
+                <p class="card-text flex-grow-1">Get simple medicine usage info from trusted sources like Tata 1mg &
+                  Netmeds. Built in India by Mrithul.</p>
+                <a href="https://medicine-use-finder.vercel.app/" target="_blank" class="btn btn-primary mt-3 w-100"
+                  aria-label="View Medicine Use Finder Project">View Project</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body text-center p-4">
-              <div class="mb-3 display-5 text-accent"><i class="fas fa-video"></i></div>
-              <h5 class="card-title">Media & Content Editing</h5>
-              <p class="card-text small">Master the art of photo, video, and text editing using powerful tools and creative techniques.</p>
+
+          <!-- Project 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="flowchartjs.png" class="card-img-top"
+                alt="FlowchartJS - Lightweight interactive flowchart library by Mrithul E" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">FlowchartJS <span class="badge-ai ms-2">Made with AI</span></h5>
+                <p class="card-text flex-grow-1">A lightweight, themeable, and interactive flowchart library for the
+                  modern web. Built with vanilla JS and CSS.</p>
+                <a href="https://mrithul-e.github.io/FlowchartJS/" target="_blank" class="btn btn-primary mt-3 w-100"
+                  aria-label="View FlowchartJS Project">View Project</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body text-center p-4">
-              <div class="mb-3 display-5 text-accent"><i class="fas fa-paint-brush"></i></div>
-              <h5 class="card-title">UI/UX & Responsive Design</h5>
-              <p class="card-text small">Design sleek, responsive websites that look great on any screen. Learn advanced UI/UX principles.</p>
+
+          <!-- Project 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="edushort.png" class="card-img-top"
+                alt="Edushort - SCERT Kerala educational platform by Mrithul E" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Edushort <span class="badge-soon ms-2">Coming Soon</span></h5>
+                <p class="card-text flex-grow-1">An educational website providing full SCERT Kerala Syllabus Alignment,
+                  featuring advanced SSLC Educational Tools, and offering structured learning resources for students and
+                  teachers across all grades.</p>
+                <button class="btn btn-primary mt-3 w-100" disabled aria-label="Edushort Project Coming Soon">View
+                  Project</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body text-center p-4">
-              <div class="mb-3 display-5 text-accent"><i class="fas fa-spider"></i></div>
-              <h5 class="card-title">Python Web Scraping (BeautifulSoup & Selenium) for Data Extraction</h5>
-              <p class="card-text small">Extract hidden gems from the web using powerful Python tools for efficient data collection and analysis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body text-center p-4">
-              <div class="mb-3 display-5 text-accent"><i class="fas fa-robot"></i></div>
-              <h5 class="card-title">Custom Python Bot Development & Workflow Automation</h5>
-              <p class="card-text small">Automate boring tasks, simplify workflows, and boost productivity with bespoke Python bots.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body text-center p-4">
-              <div class="mb-3 display-5 text-accent"><i class="fas fa-flask"></i></div>
-              <h5 class="card-title">Innovative Tech & AI Projects</h5>
-              <p class="card-text small">Explore cool coding, design, and AI experiments. Discover new integrations and web solutions.</p>
+
+          <!-- Project 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="bhasha-buddy.png" class="card-img-top"
+                alt="Bhasha-Buddy - AI-powered multilingual reader for translation and pronunciation" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Bhasha-Buddy <span class="badge-ai ms-2">Made with AI</span></h5>
+                <p class="card-text flex-grow-1">A premium, AI-powered multilingual reader for seamless translation and
+                  pronunciation. Features glassmorphic UI, TTS, and offline PWA support.</p>
+                <a href="https://mrithul-e.github.io/BhashaBuddy/" target="_blank" class="btn btn-primary mt-3 w-100"
+                  aria-label="View Bhasha-Buddy Project">View Project</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Experience Section (Converted from Carousel to Grid) -->
-  <section id="experience-section">
-    <div class="container">
-      <h2 class="text-center mb-4 mb-md-5"><span class="text-gradient">Experience & Skills</span></h2>
-      <div class="row g-4">
-        <!-- Python -->
-        <div class="col-6 col-md-4 col-lg-2 text-center">
-          <div
-            class="p-3 border rounded-3 bg-surface h-100 d-flex flex-column align-items-center justify-content-center hover-scale">
-            <i class="fab fa-python display-4 mb-2 text-white" aria-label="Python programming expertise" title="Python programming expertise"></i>
-            <h6 class="mb-0">Python</h6>
+    <!-- Services Section (Converted from Carousel to Grid) -->
+    <section id="services-section" class="bg-surface-custom">
+      <div class="container">
+        <h2 class="text-center mb-4 mb-md-5"><span class="text-gradient">What I Do</span></h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="card-body text-center p-4">
+                <div class="mb-3 display-5 text-accent"><i class="fas fa-code"></i></div>
+                <h5 class="card-title">Full-Stack Web Development</h5>
+                <p class="card-text small">Unlock the power of code! Build scalable websites and applications using
+                  modern JavaScript and Python frameworks.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- JS/HTML/CSS -->
-        <div class="col-6 col-md-4 col-lg-2 text-center">
-          <div
-            class="p-3 border rounded-3 bg-surface h-100 d-flex flex-column align-items-center justify-content-center hover-scale">
-            <i class="fab fa-js display-4 mb-2 text-warning" aria-label="JavaScript web development" title="JavaScript web development"></i>
-            <h6 class="mb-0">JavaScript</h6>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="card-body text-center p-4">
+                <div class="mb-3 display-5 text-accent"><i class="fas fa-video"></i></div>
+                <h5 class="card-title">Media & Content Editing</h5>
+                <p class="card-text small">Master the art of photo, video, and text editing using powerful tools and
+                  creative techniques.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- Arduino -->
-        <div class="col-6 col-md-4 col-lg-2 text-center">
-          <div
-            class="p-3 border rounded-3 bg-surface h-100 d-flex flex-column align-items-center justify-content-center hover-scale">
-            <i class="fas fa-microchip display-4 mb-2 text-info" aria-label="Arduino and hardware programming" title="Arduino and hardware programming"></i>
-            <h6 class="mb-0">Arduino</h6>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="card-body text-center p-4">
+                <div class="mb-3 display-5 text-accent"><i class="fas fa-paint-brush"></i></div>
+                <h5 class="card-title">UI/UX & Responsive Design</h5>
+                <p class="card-text small">Design sleek, responsive websites that look great on any screen. Learn
+                  advanced UI/UX principles.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- Scraping -->
-        <div class="col-6 col-md-4 col-lg-2 text-center">
-          <div
-            class="p-3 border rounded-3 bg-surface h-100 d-flex flex-column align-items-center justify-content-center hover-scale">
-            <i class="fas fa-database display-4 mb-2 text-success" aria-label="Data scraping and extraction expertise" title="Data scraping and extraction expertise"></i>
-            <h6 class="mb-0">Scraping</h6>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="card-body text-center p-4">
+                <div class="mb-3 display-5 text-accent"><i class="fas fa-spider"></i></div>
+                <h5 class="card-title">Python Web Scraping (BeautifulSoup & Selenium) for Data Extraction</h5>
+                <p class="card-text small">Extract hidden gems from the web using powerful Python tools for efficient
+                  data collection and analysis.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- AI Tools -->
-        <div class="col-6 col-md-4 col-lg-2 text-center">
-          <div
-            class="p-3 border rounded-3 bg-surface h-100 d-flex flex-column align-items-center justify-content-center hover-scale">
-            <i class="fas fa-brain display-4 mb-2 text-danger" aria-label="AI application development and integration" title="AI application development and integration"></i>
-            <h6 class="mb-0">AI Tools</h6>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="card-body text-center p-4">
+                <div class="mb-3 display-5 text-accent"><i class="fas fa-robot"></i></div>
+                <h5 class="card-title">Custom Python Bot Development & Workflow Automation</h5>
+                <p class="card-text small">Automate boring tasks, simplify workflows, and boost productivity with
+                  bespoke Python bots.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- App Dev -->
-        <div class="col-6 col-md-4 col-lg-2 text-center">
-          <div
-            class="p-3 border rounded-3 bg-surface h-100 d-flex flex-column align-items-center justify-content-center hover-scale">
-            <i class="fas fa-mobile-alt display-4 mb-2 text-primary" aria-label="Mobile and web app development" title="Mobile and web app development"></i>
-            <h6 class="mb-0">App Dev</h6>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="card-body text-center p-4">
+                <div class="mb-3 display-5 text-accent"><i class="fas fa-flask"></i></div>
+                <h5 class="card-title">Innovative Tech & AI Projects</h5>
+                <p class="card-text small">Explore cool coding, design, and AI experiments. Discover new integrations
+                  and web solutions.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact-section">
-    <div class="container">
-      <h2 class="text-center mb-4 mb-md-5"><span class="text-gradient">Get In Touch</span></h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="card p-4 p-md-5">
-            <form id="contact-form" action="return false">
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label for="inputName" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="inputName" placeholder="Your Name" name="name" required>
-                </div>
-                <div class="col-md-6">
-                  <label for="inputPlace" class="form-label">Place</label>
-                  <input type="text" class="form-control" id="inputPlace" placeholder="City/Region" required
-                    name="place">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="Street Address" required
-                    name="address">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputEmail" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required
-                    name="email">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputPhone" class="form-label">Phone Number</label>
-                  <input type="tel" class="form-control" id="inputPhone" placeholder="+91 9999999999" required
-                    name="phone number">
-                </div>
-                <div class="col-12">
-                  <label for="inputMsg" class="form-label">Message</label>
-                  <textarea class="form-control" id="inputMsg" rows="4" placeholder="How can I help you?" required
-                    name="message"></textarea>
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
-                    <label class="form-check-label text-muted" for="gridCheck">
-                      I confirm this message is correct
-                    </label>
+    <!-- Experience Section (Converted from Carousel to Grid) -->
+    <section id="experience-section">
+      <div class="container">
+        <h2 class="text-center mb-4 mb-md-5"><span class="text-gradient">Experience & Skills</span></h2>
+        <div class="row g-4">
+          <!-- Python -->
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <div
+              class="p-3 border rounded-3 bg-surface h-100 d-flex flex-column align-items-center justify-content-center hover-scale">
+              <i class="fab fa-python display-4 mb-2 text-white" aria-label="Python programming expertise"
+                title="Python programming expertise"></i>
+              <h6 class="mb-0">Python</h6>
+            </div>
+          </div>
+          <!-- JS/HTML/CSS -->
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <div
+              class="p-3 border rounded-3 bg-surface h-100 d-flex flex-column align-items-center justify-content-center hover-scale">
+              <i class="fab fa-js display-4 mb-2 text-warning" aria-label="JavaScript web development"
+                title="JavaScript web development"></i>
+              <h6 class="mb-0">JavaScript</h6>
+            </div>
+          </div>
+          <!-- Arduino -->
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <div
+              class="p-3 border rounded-3 bg-surface h-100 d-flex flex-column align-items-center justify-content-center hover-scale">
+              <i class="fas fa-microchip display-4 mb-2 text-info" aria-label="Arduino and hardware programming"
+                title="Arduino and hardware programming"></i>
+              <h6 class="mb-0">Arduino</h6>
+            </div>
+          </div>
+          <!-- Scraping -->
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <div
+              class="p-3 border rounded-3 bg-surface h-100 d-flex flex-column align-items-center justify-content-center hover-scale">
+              <i class="fas fa-database display-4 mb-2 text-success" aria-label="Data scraping and extraction expertise"
+                title="Data scraping and extraction expertise"></i>
+              <h6 class="mb-0">Scraping</h6>
+            </div>
+          </div>
+          <!-- AI Tools -->
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <div
+              class="p-3 border rounded-3 bg-surface h-100 d-flex flex-column align-items-center justify-content-center hover-scale">
+              <i class="fas fa-brain display-4 mb-2 text-danger" aria-label="AI application development and integration"
+                title="AI application development and integration"></i>
+              <h6 class="mb-0">AI Tools</h6>
+            </div>
+          </div>
+          <!-- App Dev -->
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <div
+              class="p-3 border rounded-3 bg-surface h-100 d-flex flex-column align-items-center justify-content-center hover-scale">
+              <i class="fas fa-mobile-alt display-4 mb-2 text-primary" aria-label="Mobile and web app development"
+                title="Mobile and web app development"></i>
+              <h6 class="mb-0">App Dev</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section">
+      <div class="container">
+        <h2 class="text-center mb-4 mb-md-5"><span class="text-gradient">Get In Touch</span></h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card p-4 p-md-5">
+              <form id="contact-form" action="return false">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="inputName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Your Name" name="name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputPlace" class="form-label">Place</label>
+                    <input type="text" class="form-control" id="inputPlace" placeholder="City/Region" required
+                      name="place">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Street Address" required
+                      name="address">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required
+                      name="email">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputPhone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="inputPhone" placeholder="+91 9999999999" required
+                      name="phone number">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputMsg" class="form-label">Message</label>
+                    <textarea class="form-control" id="inputMsg" rows="4" placeholder="How can I help you?" required
+                      name="message"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                      <label class="form-check-label text-muted" for="gridCheck">
+                        I confirm this message is correct
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg w-100 px-5" id="send-msg-btn">Send
+                      Message</button>
                   </div>
                 </div>
-                <div class="col-12 text-center mt-4">
-                  <button type="submit" class="btn btn-primary btn-lg w-100 px-5" id="send-msg-btn">Send
-                    Message</button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   </main>
 
@@ -449,6 +480,113 @@
 
   <!-- Background Snake script -->
   <script src="snake.js"></script>
+
+  <!-- Custom Notification Prompt Overlay -->
+  <div id="notif-prompt-overlay" class="notif-prompt-overlay">
+    <div class="notif-prompt-card">
+      <button id="notif-prompt-close" class="notif-prompt-close" aria-label="Close notification prompt">&times;</button>
+      <div class="notif-prompt-icon">
+        <i class="fas fa-bell"></i>
+      </div>
+      <h3 class="notif-prompt-title">Stay in the Loop</h3>
+      <p class="notif-prompt-text">
+        Keep up with my latest builds. Toggle notifications on for project reveals.
+      </p>
+      <div class="notif-prompt-actions">
+        <button id="notif-prompt-allow" class="notif-prompt-btn notif-prompt-btn-allow">
+          <i class="fas fa-check me-2"></i>Enable Notifications
+        </button>
+        <button id="notif-prompt-dismiss" class="notif-prompt-btn notif-prompt-btn-dismiss">
+          Maybe Later
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- OneSignal Init & Custom Prompt Logic -->
+  <script>
+    // === OneSignal Initialization ===
+    // IMPORTANT: Replace 'YOUR_ONESIGNAL_APP_ID' with your actual App ID from the OneSignal dashboard.
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function (OneSignal) {
+      await OneSignal.init({
+        appId: "c7f9ae37-a410-4f2a-9cdf-ac359ce95d3a",
+        notifyButton: {
+          enable: false, // We use our own custom prompt
+        },
+        promptOptions: {
+          autoPrompt: false, // Disable all built-in prompts
+        },
+        allowLocalhostAsSecureOrigin: true, // For local testing
+      });
+    });
+
+    // === Custom Notification Prompt Logic ===
+    (function () {
+      const overlay = document.getElementById('notif-prompt-overlay');
+      const allowBtn = document.getElementById('notif-prompt-allow');
+      const dismissBtn = document.getElementById('notif-prompt-dismiss');
+      const closeBtn = document.getElementById('notif-prompt-close');
+
+      function showPrompt() {
+        overlay.classList.add('active');
+      }
+
+      function hidePrompt() {
+        overlay.classList.remove('active');
+        overlay.classList.add('hiding');
+        setTimeout(() => {
+          overlay.classList.remove('hiding');
+        }, 400);
+      }
+
+      // Show the custom prompt after 3 seconds, only if not already subscribed or dismissed recently
+      async function checkAndShowPrompt() {
+        const dismissed = localStorage.getItem('notifPromptDismissed');
+        if (dismissed) {
+          const dismissedAt = parseInt(dismissed, 10);
+          // Don't show again for 7 days after dismiss
+          if (Date.now() - dismissedAt < 7 * 24 * 60 * 60 * 1000) return;
+        }
+
+        // Wait for OneSignal to be ready
+        OneSignalDeferred.push(async function (OneSignal) {
+          const permission = await OneSignal.Notifications.permission;
+          const isSubscribed = await OneSignal.User.PushSubscription.optedIn;
+          // Only show if not already subscribed
+          if (!permission && !isSubscribed) {
+            setTimeout(showPrompt, 3000);
+          }
+        });
+      }
+
+      // Allow button: trigger native browser permission via OneSignal
+      allowBtn.addEventListener('click', function () {
+        hidePrompt();
+        OneSignalDeferred.push(async function (OneSignal) {
+          await OneSignal.Notifications.requestPermission();
+        });
+      });
+
+      // Dismiss / Close
+      dismissBtn.addEventListener('click', function () {
+        hidePrompt();
+        localStorage.setItem('notifPromptDismissed', Date.now().toString());
+      });
+      closeBtn.addEventListener('click', function () {
+        hidePrompt();
+        localStorage.setItem('notifPromptDismissed', Date.now().toString());
+      });
+
+
+      // Kick it off
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', checkAndShowPrompt);
+      } else {
+        checkAndShowPrompt();
+      }
+    })();
+  </script>
 </body>
 
 </html>
