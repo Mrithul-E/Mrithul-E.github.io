@@ -10,6 +10,7 @@
     content="Portfolio of Mrithul E, a developer from Kerala, India specializing in Python automation, web scraping, and AI-powered web solutions. Check out projects like Bhasha-Buddy and FlowchartJS.">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="canonical" href="https://www.mrithul.in/">
 
   <!-- Resource Hints -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +37,7 @@
     "@context": "https://schema.org/",
     "@type": "Person",
     "name": "Mrithul E",
-    "url": "https://mrithul-e.github.io",
+    "url": "https://www.mrithul.in",
     "jobTitle": "Developer",
     "address": {
       "@type": "PostalAddress",
@@ -546,6 +547,17 @@
 
       // Show the custom prompt after 3 seconds, only if not already subscribed or dismissed recently
       async function checkAndShowPrompt() {
+        // 1. If browser notifications are already granted or denied, never show custom prompt
+        if ('Notification' in window && Notification.permission !== 'default') {
+          return;
+        }
+
+        // 2. Check if user already clicked "Enable" before (even if they dismissed the native prompt)
+        if (localStorage.getItem('notifPromptInteracted')) {
+          return;
+        }
+
+        // 3. Check if user clicked "Maybe Later" / close recently
         const dismissed = localStorage.getItem('notifPromptDismissed');
         if (dismissed) {
           const dismissedAt = parseInt(dismissed, 10);
@@ -553,7 +565,7 @@
           if (Date.now() - dismissedAt < 7 * 24 * 60 * 60 * 1000) return;
         }
 
-        // Wait for OneSignal to be ready
+        // 4. Wait for OneSignal to be ready and check subscription status
         OneSignalDeferred.push(async function (OneSignal) {
           const permission = await OneSignal.Notifications.permission;
           const isSubscribed = await OneSignal.User.PushSubscription.optedIn;
@@ -567,6 +579,8 @@
       // Allow button: trigger native browser permission via OneSignal
       allowBtn.addEventListener('click', function () {
         hidePrompt();
+        // Mark that user interacted with the prompt so we never show it again
+        localStorage.setItem('notifPromptInteracted', 'true');
         OneSignalDeferred.push(async function (OneSignal) {
           await OneSignal.Notifications.requestPermission();
         });
@@ -581,7 +595,6 @@
         hidePrompt();
         localStorage.setItem('notifPromptDismissed', Date.now().toString());
       });
-
 
       // Kick it off
       if (document.readyState === 'loading') {
