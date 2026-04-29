@@ -106,7 +106,7 @@
     <!-- Hero Section -->
     <section id="home-section" class="d-flex align-items-center min-vh-100">
       <div class="container">
-        <div class="row align-items-center flex-column-reverse flex-lg-row">
+        <div class="row align-items-center justify-content-between flex-column-reverse flex-lg-row hero-row">
           <div class="col-lg-6 mt-5 mt-lg-0 text-center text-lg-start z-index-1">
             <div class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill glass-panel mb-4 shadow-sm">
               <span class="fs-5">👋</span>
@@ -125,13 +125,17 @@
               applications and Python automation systems, with a focus on speed, accessibility, and performance.
             </p>
 
-            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-5">
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
               <a href="#projects-section" class="btn btn-primary btn-lg shadow-lg">Explore Projects</a>
               <a href="#contact-section"
                 class="btn btn-outline-light btn-lg glass-panel text-white border-0 hover-scale">Get in Touch</a>
+              <a href="https://github.com/Mrithul-E" target="_blank" rel="noopener noreferrer"
+                class="btn btn-ghost btn-lg hero-social-btn">
+                <i class="fab fa-github me-2"></i>View GitHub
+              </a>
             </div>
 
-            <div class="glass-panel p-4 position-relative overflow-hidden"
+            <div class="glass-panel p-4 position-relative overflow-hidden hero-quote-card"
               style="max-width: 500px; margin: 0 auto 0 0;">
               <div class="position-absolute opacity-25"
                 style="top: -20px; right: 0; font-size: 6rem; color: var(--accent-color);">
@@ -139,7 +143,7 @@
               </div>
               <figure class="mb-0 position-relative z-index-1">
                 <blockquote class="blockquote">
-                  <p class="mb-3 fs-6 fst-italic text-light">"Don’t take rest after your first victory because if you
+                  <p class="mb-3 fs-6 fst-italic quote-text">"Don't take rest after your first victory because if you
                     fail in second, more lips
                     are waiting to say that your first victory was just luck."</p>
                 </blockquote>
@@ -150,7 +154,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 text-center">
+          <div class="col-lg-5 text-center hero-visual-col">
             <div class="hero-img-wrapper float-anim">
               <img src="https://avatars.githubusercontent.com/u/125123198?v=4" class="hero-img"
                 alt="Mrithul E: Full-Stack Developer & AI Automation Expert based in Kerala, India" loading="lazy">
@@ -172,7 +176,12 @@
                 alt="Medicine Use Finder - Web app for medicine information by Mrithul E" loading="lazy">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title fw-bold">Medicine Use Finder</h5>
-                <p class="card-text flex-grow-1">Get simple medicine usage info from trusted sources like Tata 1mg &
+                <div class="tech-tag-list" aria-label="Medicine Use Finder tech stack">
+                  <span class="tech-tag">#JavaScript</span>
+                  <span class="tech-tag">#APIs</span>
+                  <span class="tech-tag">#Healthcare</span>
+                </div>
+                <p class="card-text project-description flex-grow-1">Get simple medicine usage info from trusted sources like Tata 1mg &
                   Netmeds. Built in India by Mrithul.</p>
                 <a href="https://medicine-use-finder.vercel.app/" target="_blank" class="btn btn-primary mt-3 w-100"
                   aria-label="View Medicine Use Finder Project">View Project</a>
@@ -187,7 +196,12 @@
                 alt="FlowchartJS - Lightweight interactive flowchart library by Mrithul E" loading="lazy">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title fw-bold">FlowchartJS <span class="badge-ai ms-2">Made with AI</span></h5>
-                <p class="card-text flex-grow-1">A lightweight, themeable, and interactive flowchart library for the
+                <div class="tech-tag-list" aria-label="FlowchartJS tech stack">
+                  <span class="tech-tag">#VanillaJS</span>
+                  <span class="tech-tag">#CSS</span>
+                  <span class="tech-tag">#Library</span>
+                </div>
+                <p class="card-text project-description flex-grow-1">A lightweight, themeable, and interactive flowchart library for the
                   modern web. Built with vanilla JS and CSS.</p>
                 <a href="https://www.mrithul.in/FlowchartJS/" target="_blank" class="btn btn-primary mt-3 w-100"
                   aria-label="View FlowchartJS Project">View Project</a>
@@ -202,7 +216,12 @@
                 alt="Edushort - SCERT Kerala educational platform by Mrithul E" loading="lazy">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title fw-bold">Edushort <span class="badge-soon ms-2">Coming Soon</span></h5>
-                <p class="card-text flex-grow-1">An educational website providing full SCERT Kerala Syllabus Alignment,
+                <div class="tech-tag-list" aria-label="Edushort tech stack">
+                  <span class="tech-tag">#EdTech</span>
+                  <span class="tech-tag">#SCERT</span>
+                  <span class="tech-tag">#Platform</span>
+                </div>
+                <p class="card-text project-description flex-grow-1">An educational website providing full SCERT Kerala Syllabus Alignment,
                   featuring advanced SSLC Educational Tools, and offering structured learning resources for students and
                   teachers across all grades.</p>
                 <button class="btn btn-primary mt-3 w-100" disabled aria-label="Edushort Project Coming Soon">View
@@ -218,7 +237,12 @@
                 alt="Bhasha-Buddy - AI-powered multilingual reader for translation and pronunciation" loading="lazy">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title fw-bold">Bhasha-Buddy <span class="badge-ai ms-2">Made with AI</span></h5>
-                <p class="card-text flex-grow-1">A premium, AI-powered multilingual reader for seamless translation and
+                <div class="tech-tag-list" aria-label="Bhasha-Buddy tech stack">
+                  <span class="tech-tag">#AI</span>
+                  <span class="tech-tag">#PWA</span>
+                  <span class="tech-tag">#TTS</span>
+                </div>
+                <p class="card-text project-description flex-grow-1">A premium, AI-powered multilingual reader for seamless translation and
                   pronunciation. Features glassmorphic UI, TTS, and offline PWA support.</p>
                 <a href="https://www.mrithul.in/BhashaBuddy/" target="_blank" class="btn btn-primary mt-3 w-100"
                   aria-label="View Bhasha-Buddy Project">View Project</a>
@@ -268,29 +292,29 @@
             <div class="card h-100">
               <div class="card-body text-center p-4">
                 <div class="mb-3 display-5 text-accent"><i class="fas fa-spider"></i></div>
-                <h5 class="card-title">Python Web Scraping (BeautifulSoup & Selenium) for Data Extraction</h5>
-                <p class="card-text small">Extract hidden gems from the web using powerful Python tools for efficient
-                  data collection and analysis.</p>
+                <h5 class="card-title">Automation & Data Extraction</h5>
+                <p class="card-text small">Build bots, scrapers, and workflow automations with Python, BeautifulSoup,
+                  Selenium, and reliable integrations.</p>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <div class="card-body text-center p-4">
-                <div class="mb-3 display-5 text-accent"><i class="fas fa-robot"></i></div>
-                <h5 class="card-title">Custom Python Bot Development & Workflow Automation</h5>
-                <p class="card-text small">Automate boring tasks, simplify workflows, and boost productivity with
-                  bespoke Python bots.</p>
+                <div class="mb-3 display-5 text-accent"><i class="fas fa-brain"></i></div>
+                <h5 class="card-title">AI Integration & Prototyping</h5>
+                <p class="card-text small">Turn AI ideas into usable products with assistants, content workflows, and
+                  intelligent features embedded into web experiences.</p>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <div class="card-body text-center p-4">
-                <div class="mb-3 display-5 text-accent"><i class="fas fa-flask"></i></div>
-                <h5 class="card-title">Innovative Tech & AI Projects</h5>
-                <p class="card-text small">Explore cool coding, design, and AI experiments. Discover new integrations
-                  and web solutions.</p>
+                <div class="mb-3 display-5 text-accent"><i class="fas fa-microchip"></i></div>
+                <h5 class="card-title">Hardware & Robotics Builds</h5>
+                <p class="card-text small">Prototype interactive systems with Arduino, sensors, and custom logic for
+                  practical experiments and connected devices.</p>
               </div>
             </div>
           </div>
@@ -375,28 +399,13 @@
                     <input type="text" class="form-control" id="inputName" placeholder="Your Name" name="name" required>
                   </div>
                   <div class="col-md-6">
-                    <label for="inputPlace" class="form-label">Place</label>
-                    <input type="text" class="form-control" id="inputPlace" placeholder="City/Region" required
-                      name="place">
-                  </div>
-                  <div class="col-12">
-                    <label for="inputAddress" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="Street Address" required
-                      name="address">
-                  </div>
-                  <div class="col-md-6">
                     <label for="inputEmail" class="form-label">Email</label>
                     <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required
                       name="email">
                   </div>
-                  <div class="col-md-6">
-                    <label for="inputPhone" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="inputPhone" placeholder="+91 9999999999" required
-                      name="phone number">
-                  </div>
                   <div class="col-12">
                     <label for="inputMsg" class="form-label">Message</label>
-                    <textarea class="form-control" id="inputMsg" rows="4" placeholder="How can I help you?" required
+                    <textarea class="form-control" id="inputMsg" rows="5" placeholder="How can I help you?" required
                       name="message"></textarea>
                   </div>
                   <div class="col-12">
@@ -408,7 +417,7 @@
                     </div>
                   </div>
                   <div class="col-12 text-center mt-4">
-                    <button type="submit" class="btn btn-primary btn-lg w-100 px-5" id="send-msg-btn">Send
+                    <button type="submit" class="btn btn-primary btn-lg w-100 px-5 contact-submit-btn" id="send-msg-btn">Send
                       Message</button>
                   </div>
                 </div>
