@@ -656,6 +656,10 @@ footer {
   color: var(--text-primary);
 }
 
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
 /* Mobile: bottom-center, full width */
 @media (max-width: 480px) {
   .notif-prompt-overlay {
