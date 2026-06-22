@@ -38,6 +38,9 @@
   <!-- OneSignal Web Push SDK -->
   <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
 
+  <!-- reCAPTCHA  -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6Lf_hS0tAAAAAMZJ6-zaq8JQEKvYuAVFJ431wxZS"></script>
+
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
@@ -475,24 +478,47 @@
 
       // Contact Form Logic - PRESERVED EXACTLY AS REQUESTED
       $("#contact-form").submit((e) => {
-        e.preventDefault()
-        // Adding visual feedback button state could be nice here, but sticking to logic strictly
-        $("#send-msg-btn").prop('disabled', true).text('Sending...');
+    e.preventDefault();
 
-        $.ajax({
-          url: "https://script.google.com/macros/s/AKfycbxvmGGjIeamZMWyauoXL6YkHC_PQc7yIy6OP7tJHU9uP8df063l6bg4ZrENLVVyYKkEMg/exec",
-          data: $("#contact-form").serialize(),
-          method: "post",
-          success: function (response) {
-            alert("Form submitted successfully")
-            window.location.reload()
-          },
-          error: function (err) {
-            alert("Something went wrong")
-            $("#send-msg-btn").prop('disabled', false).text('Send Message');
-          }
-        })
-      })
+    $("#send-msg-btn")
+        .prop('disabled', true)
+        .text('Sending...');
+
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6Lf_hS0tAAAAAMZJ6-zaq8JQEKvYuAVFJ431wxZS', {
+            action: 'submit'
+        }).then(function (token) {
+
+            let formData = $("#contact-form").serialize();
+            formData += "&g-recaptcha-response=" + encodeURIComponent(token);
+
+            $.ajax({
+                url: "https://formspree.io/f/xwvdkowl",
+                method: "POST",
+                data: formData,
+                dataType: "json",
+
+                success: function () {
+                    alert("Form submitted successfully");
+                    window.location.reload();
+                },
+
+                error: function () {
+                    alert("Something went wrong");
+                    $("#send-msg-btn")
+                        .prop('disabled', false)
+                        .text('Send Message');
+                }
+            });
+
+        }).catch(function () {
+            alert("CAPTCHA verification failed");
+            $("#send-msg-btn")
+                .prop('disabled', false)
+                .text('Send Message');
+        });
+    });
+});
     });
   </script>
 
